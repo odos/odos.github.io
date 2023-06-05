@@ -44,7 +44,7 @@ document.addEventListener('keydown', function(event) {
 });
 
 window.onload = function() {
-  var images = ["img/bg.png", "img/bg2.png", "img/bg3.png", "img/bg4.png", "img/bg5.png", "img/denim.png"];
+  var images = ["img/s1.png", "img/c1.png", "img/c2.png", "img/ds1.png", "img/j1.png", "img/t1.png", "img/x1.png"];
   var rand = Math.floor(Math.random() * images.length);
   var url = "url('" + images[rand] + "')";
   document.documentElement.style.setProperty("--bg-image", url);
