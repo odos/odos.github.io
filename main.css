@@ -1,0 +1,158 @@
+/*@import "./node_modules/@fontsource/iosevka/index.css";*/
+/* @import "https://unpkg.com/@fontsource/iosevka@4.5.4/index.css"; */
+
+/* EDIT THIS */
+:root {
+    font-size: 16px;
+    --rows:4;
+    --main_bg: #181818;
+    --main_fg: #ffffff;
+    --secondary_fg: #b2b2b2;
+    --secondary_bg: #0c0c0c;
+    --black: #000000;
+    --hover_bg: #1793d1;
+    --hover_fg: #333333;
+}
+
+/* EDIT ENDS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "SF Pro Rounded", Bold;
+    /* font-weight: 200; */
+    height: 90vh;
+    background: var(--main_bg);
+    /* background-image: url("wall.jpg"); */
+    /* background-size: cover; */
+    /* background-image: url("bg.png"); */
+    background-image: var(--bg-image);
+    background-repeat: repeat; /* Tiling both horizontally and vertically */
+    /* background-size: 50px 50px; /* Tiling size in pixels */ */
+    color: var(--main_fg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.greet {
+    /* font-family: "SF Pro Display" */
+    /* width: 100px; */
+    background: var(--secondary_bg);
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    font-size: 2.0em;
+    /* backdrop-filter: blur(10px); */
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(var(--rows),1fr);
+    gap: 0.5em;
+}
+
+.container {
+    background: var(--secondary_bg);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.50em; */
+    text-align: left;
+    transition: 50ms;
+    border-radius: 12px;    
+    /* backdrop-filter: blur(10px); */
+}
+
+.container:hover {
+    /* transform: translateY(-4px); */
+    /* transform: scale(1.02, 1.05); */
+    background: #000000;
+}
+
+
+.title {
+    color: var(--main_fg);
+    font-size: 1.50em;
+    padding: 10px 10px 10px 10px;
+}
+
+.container_item {
+    display: block;
+    color: var(--main_fg);
+    transition: 250ms;
+    /* border-radius: 0.25em; */
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 6px 30px 6px 30px;
+}
+
+.container_item:hover {
+    color: var(--black);
+    background: var(--hover_bg);
+}
+
+
+.overlay::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0c0c0cc0;
+  z-index: -1; /* Ensure the overlay is behind the HTML content */
+}
+
+input[type="text"] {
+  background: var(--secondary_bg);
+  border-radius: 10px;
+  padding: 12px;
+  font-family: "SF Pro Rounded", Bold;
+  text-align: center;
+  font-size: 2.0em;
+  color: var(--main_fg);
+  border: none;
+  width: 100%;
+  outline: none;
+  caret-color: transparent; /* hide the cursor indicator */
+  /* letter-spacing: 1px; /* Increase letter spacing by 1 pixel */ */
+}
+
+  /* padding: 8px 16px; */
+  /* border-radius: 4px; */
+  /* font-size: 16px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* width: 400px; */
+
+input[type="text"]:focus {
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); */
+  caret-color: var(--main_fg); /* show the cursor indicator */
+}
+
+.autocomplete-suggestions {
+  position: absolute;
+  z-index: 9999;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  left: 0;
+  top: 50px;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* .search-box input[type="text"] { */
+/*   letter-spacing: 10px; /* Increase letter spacing by 1 pixel */ */
+/* } */
+
