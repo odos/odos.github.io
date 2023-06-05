@@ -31,7 +31,7 @@ body {
     /* background-image: url("bg.png"); */
     background-image: var(--bg-image);
     background-repeat: repeat; /* Tiling both horizontally and vertically */
-    /* background-size: 50px 50px; /* Tiling size in pixels */ */
+/*     background-size: 50px 50px; /* Tiling size in pixels  */*/
     color: var(--main_fg);
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ body {
 
 .title {
     color: var(--main_fg);
-    font-size: 1.50em;
+    font-size: 1.20em;
     padding: 10px 10px 10px 10px;
 }
 
