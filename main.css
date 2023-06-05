@@ -12,6 +12,7 @@
     --black: #000000;
     --hover_bg: #1793d1;
     --hover_fg: #333333;
+/*  --max_columns: 4; /* Define the maximum number of columns */*/
 }
 
 /* EDIT ENDS */
@@ -60,6 +61,8 @@ body {
     grid-template-columns: repeat(var(--rows),1fr);
     gap: 0.5em;
 }
+
+
 
 .container {
     background: var(--secondary_bg);
