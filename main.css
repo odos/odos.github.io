@@ -4,7 +4,7 @@
 /* EDIT THIS */
 :root {
     font-size: 16px;
-    --rows:6;
+    --rows:4;
     --main_bg: #181818;
     --main_fg: #ffffff;
     --secondary_fg: #b2b2b2;
@@ -106,7 +106,7 @@ body {
 
 
 .searchb input[type="text"] {
-    color: #e0ffff;
+    color: #d0ffff;
 }
 
 .overlay::before {
