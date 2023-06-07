@@ -105,6 +105,10 @@ body {
 }
 
 
+.searchb input[type="text"] {
+    color: #e0ffff;
+}
+
 .overlay::before {
   content: '';
   position: fixed;
