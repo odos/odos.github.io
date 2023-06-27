@@ -11,7 +11,7 @@
     --secondary_bg: #3B4252;
     --black: #2E3440;
     --hover_bg: #81A1C1;
-    --hover_fg: #333333;
+    --hover_fg: #3B4252;
 /*  --max_columns: 4; /* Define the maximum number of columns */*/
 }
 
@@ -106,7 +106,7 @@ body {
 
 
 .searchb input[type="text"] {
-    color: #d0ffff;
+    color: #8FBCBB;
 }
 
 .overlay::before {
@@ -116,7 +116,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #0c0c0cc0;
+  background-color: #4C566Ac0;
   z-index: -1; /* Ensure the overlay is behind the HTML content */
 }
 
