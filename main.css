@@ -42,6 +42,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    color: var(--main_fg);
     gap: 1em;
 }
 
