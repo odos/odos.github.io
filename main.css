@@ -5,13 +5,13 @@
 :root {
     font-size: 16px;
     --rows:6;
-    --main_bg: #2E3440;
-    --main_fg: #ECEFF4;
-    --secondary_fg: #D8DEE9;
-    --secondary_bg: #3B4252;
-    --black: #2E3440;
-    --hover_bg: #81A1C1;
-    --hover_fg: #3B4252;
+    --main_bg: #202020;
+    --main_fg: #ffffff;
+    --secondary_fg: #dddddd;
+    --secondary_bg: #333333;
+    --black: #000000;
+    --hover_bg: #80c0ff;
+    --hover_fg: #333333;
 /*  --max_columns: 4; /* Define the maximum number of columns */*/
 }
 
