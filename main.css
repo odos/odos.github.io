@@ -117,7 +117,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #4C566Ac0;
+  background-color: #444444;
   z-index: -1; /* Ensure the overlay is behind the HTML content */
 }
 
